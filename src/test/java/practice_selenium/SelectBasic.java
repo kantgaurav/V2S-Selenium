@@ -17,6 +17,8 @@ public class SelectBasic {
 		 WebElement selectElement = driver.findElement(By.name("location"));
 	     Select select = new Select(selectElement);	
 	     
+          select.selectByValue("Sydney");
+	     
 		
 		
 	}

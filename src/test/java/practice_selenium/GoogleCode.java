@@ -23,14 +23,6 @@ public class GoogleCode {
 	List<WebElement>lst=driver.findElements(By.xpath("//*[@class='mkHrUc']//ul//li//span"));
 
 	System.out.println(lst.size());
-	
-	
-	
-	
-	
-	
-	
-	
 
 	}
 

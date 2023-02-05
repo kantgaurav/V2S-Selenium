@@ -20,6 +20,7 @@ public class ReadFromPropFle {
 		String url = prop.getProperty("url");
 
 		System.out.println(url);
+		System.out.println(brow);
 		//Wrting on Properties File // 
 		
 		FileOutputStream fos = new FileOutputStream("D:\\workspace\\practice_selenium\\src\\test\\resources\\properties\\testData.properties");

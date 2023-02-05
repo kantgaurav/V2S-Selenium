@@ -33,14 +33,17 @@ public class MakeMyTrip {
 		driver.navigate().refresh();
 		//StaleElementException //
 		///good idea is Reaload the WebElement after anyaction : Refresh or PageLoad//
+		
 		fromCity = driver.findElement(By.xpath("//input[@id='fromCity']"));
-		WebElement toCity = driver.findElement(By.xpath("//input[@id='toCity']"));
-		
-		
+		///WebElement toCity = driver.findElement(By.xpath("//input[@id='toCity']"));
 		
 		wait.until(ExpectedConditions.elementToBeClickable(fromCity));
 		
 		fromCity.sendKeys("MUMBAI");
+		
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='toCity']")));
+		
+		
 		
 	
 		

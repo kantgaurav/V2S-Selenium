@@ -13,7 +13,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -24,7 +23,7 @@ public class CredentialType {
 	String URL = "https://einstein2.us/VMSQAAutomation/Account/Login.aspx";
 	String username = "agency@yopmail.com";
 	String password = "SGFsbG1hcmtAMTIz";
-
+	SoftAssert softAssert = new SoftAssert();
 	public String decode(String pwd) {
 		// Get bytes from string
 		byte[] byteArray = Base64.getDecoder().decode(password.getBytes());
@@ -40,7 +39,7 @@ public class CredentialType {
 		driver.manage().window().maximize();
 		driver.get(URL);
 
-		SoftAssert softAssert = new SoftAssert();
+		
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		WebElement edtEmail = driver.findElement(By.xpath("//input[@id='MainContent_Email']"));

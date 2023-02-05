@@ -29,7 +29,7 @@ public class ArrayProgram1 {
 		
 		ar1.printName();
 		
-		ar1.display1();
+		display1();
 
 	}
 	

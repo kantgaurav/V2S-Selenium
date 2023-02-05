@@ -49,7 +49,11 @@ public class Email {
         if (deptChoice == 1){ return "Android";}
         else if (deptChoice == 2){ return "Web"; }
         else if (deptChoice == 3){ return "ML";}
-        else{ return "No Such Department";}
+       
+        else{ 
+        	 //in.close();
+        	return "No Such Department";}
+
     }
 
     //Generate a Random Password

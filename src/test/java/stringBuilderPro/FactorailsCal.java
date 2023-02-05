@@ -1,7 +1,5 @@
 package stringBuilderPro;
 
-import org.openqa.selenium.By;
-
 public class FactorailsCal {
 
 	public static void main(String[] args) {

@@ -5,17 +5,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import org.asynchttpclient.netty.channel.ChannelManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SnapDealTest {
@@ -69,8 +63,7 @@ public class SnapDealTest {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(3));
 		//wait.until(ExpectedConditions.invisibilityOfElementLocated(null));
 		driver.findElement(By.id("5764608168892448349")).click();
-		Actions action = new Actions(driver);
-
+	
 		// Get handles of the windows
 		String mainWindowHandle = driver.getWindowHandle();
 		Set<String> allWindowHandles = driver.getWindowHandles();
