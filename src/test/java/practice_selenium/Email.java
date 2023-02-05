@@ -1,6 +1,6 @@
 package practice_selenium;
 
-import java.util.Locale;
+
 import java.util.Scanner;
 
 public class Email {

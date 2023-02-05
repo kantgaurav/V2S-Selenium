@@ -1,6 +1,5 @@
 package javaArray;
 
-import javax.print.attribute.standard.PrinterName;
 
 public class ArrayProgram1 {
 
